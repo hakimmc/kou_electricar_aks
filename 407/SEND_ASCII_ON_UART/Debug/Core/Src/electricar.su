@@ -1,0 +1,10 @@
+../Core/Src/electricar.c:10:7:GpsToDecimalDegrees	168	static
+../Core/Src/electricar.c:56:7:CalculateHeadingVehicle	72	static
+../Core/Src/electricar.c:101:5:IS_FLOAT	24	static
+../Core/Src/electricar.c:118:6:cci2a	16	static
+../Core/Src/electricar.c:126:7:ccf2a	40	static
+../Core/Src/electricar.c:145:5:IS_CONTAIN	24	static
+../Core/Src/electricar.c:162:7:CONVERT_ASCII	176	dynamic
+../Core/Src/electricar.c:189:5:float2twobyte	16	static
+../Core/Src/electricar.c:211:7:cf2a	24	static
+../Core/Src/electricar.c:225:6:ci2a	16	static
