@@ -92,6 +92,7 @@ int main(void)
   MX_UART5_Init();
   /* USER CODE BEGIN 2 */
 int i=0;
+int angle;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -107,6 +108,7 @@ int i=0;
 	  HAL_UART_Transmit(&huart5, arr, strlen(arr), 1000);
 	  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12);
 	  HAL_Delay(2000);
+
   }
   /* USER CODE END 3 */
 }

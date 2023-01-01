@@ -60,8 +60,8 @@ all: main-build
 main-build: ascii_var.elf secondary-outputs
 
 # Tool invocations
-ascii_var.elf ascii_var.map: $(OBJS) $(USER_OBJS) C:\Users\acalg\STM32CubeIDE\workspace_1.9.0\TUT_CAN_F103\ascii_var\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "ascii_var.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\acalg\STM32CubeIDE\workspace_1.9.0\TUT_CAN_F103\ascii_var\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ascii_var.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+ascii_var.elf ascii_var.map: $(OBJS) $(USER_OBJS) C:\Users\acalg\OneDrive\Belgeler\GitHub\kou_electricar_aks\407\SEND_ASCII_ON_UART\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "ascii_var.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\acalg\OneDrive\Belgeler\GitHub\kou_electricar_aks\407\SEND_ASCII_ON_UART\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ascii_var.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
